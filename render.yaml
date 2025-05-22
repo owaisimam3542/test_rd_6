@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bhole-ai-backend
+    env: docker
+    plan: starter
+    autoDeploy: true
+    envVars:
+      - key: OLLAMA_MODELS
+        value: "mistral"
